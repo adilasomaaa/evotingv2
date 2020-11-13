@@ -60,35 +60,28 @@ class SiswaController extends Controller
         return view('siswa.edit', compact('title','dt','data'));
     }
 
-    public function update(request $request , $id)
+    public function update(Request $request, $id)
     {
        
         $name = $request->name;
-        // $email  = $request->email;
+        $email  = $request->email;
         $kelas = $request->kelas;
         $password = bcrypt($request->password);
-        dd($id);
+        // dd($request);
   
         $data = User::find($id);
-        // $data->name = $name;
-        // $data->email = $email;
-        $data->password = $password;
-        $data->update();
+        $data->name  = $name;
+        $data->email  = $email;
+        $data->password  = $password;
+        $data->save();
 
         $usr = Siswa::find($id);
         $usr->user_id = $data->id;
         $usr->nama = $name;
         $usr->kelas = $kelas;
-        // $usr->email = $email;
+        $usr->email = $email;
         $usr->password = $password;
-        $usr->update();
-
-        // $user = User::create([
-        //     'name' => $request->input('name'),
-        //     'email' => $request->input('email'),
-        //     'password' => Hash::make($request->input('password')),
-
-        // ]);
+        $usr->save();
         
 
         Alert::success('Sukses','Data berhasil diubah');

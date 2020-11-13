@@ -19,7 +19,7 @@
                        <h2 class="lead">Nama Calon Wakil : <b>{{$dt->calon_wakil}}</b></h2>
                        
                        <ul class="ml-4 mb-0 fa-ul text-muted">
-                         <div>
+                         <div class="mt-3 mb-3">
                              <a href="{{url('kandidat/detail/'.$dt->id)}}" class="btn btn-lg btn-success">
                              <i class="fas fa-user"></i> Profil Kandidat
                              </a>

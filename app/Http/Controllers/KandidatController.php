@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Kandidat;
+use App\User;
 use Alert;
 
 class KandidatController extends Controller

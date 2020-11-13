@@ -9,7 +9,7 @@
         </b>
     </h2>
    
-    <img src="{{asset($dt->photo)}}" style="width:500px;margin-bottom:10px"> 
+    <img src="{{asset($dt->photo)}}" class="img-fluid" alt="Responsive image" style="width:500px;margin-bottom:10px"> 
   <div class="row">
     <div class="col">
         <h3>

@@ -24,22 +24,22 @@
                 {{method_field('PUT')}}
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" name="name" class="form-control" name="email" id="exampleInputEmail1" placeholder="Nomor Urut" value="{{$dt->nama }}">
+                    <input type="text" name="name" class="form-control"  placeholder="Nomor Urut" value="{{$dt->nama }}">
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputFile">Kelas</label>
-                    <input type="text" name="kelas" class="form-control" id="exampleInputFile" value="{{$dt->kelas}}">
+                    <input type="text" name="kelas" class="form-control"  value="{{$dt->kelas}}">
                 </div>
 
                 <div class="form-group">
                     <label for="name">Email</label>
-                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Nama Calon Ketua" value="{{$dt->email}}">
+                    <input type="email" class="form-control" name="email"  placeholder="Nama Calon Ketua" value="{{$dt->email}}">
                 </div>
 
                 <div class="form-group">
                     <label for="name">Ganti Password</label>
-                    <input type="password" class="form-control" name="password" id="exampleInputEmail1"  placeholder="Masukkan password baru .. " value="{{$dt->password}}">
+                    <input type="password" class="form-control" name="password"   placeholder="Masukkan password baru .. " value="{{$dt->password}}">
                 </div>
                
            

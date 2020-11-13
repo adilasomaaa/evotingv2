@@ -13,23 +13,21 @@ class GrafikController extends Controller
     {
         $title = 'Hasil Polling';
         $hasil = [];
-        $kandidat = Kandidat::get();
+      
+        $kandidat = Kandidat::with('voting')->get();
         $total_suara = [];
-        
-        // $kdd = Kandidat::get()->count();
-        // dd($kandidat);
         
         $total_pemilih = Siswa::count();
         $hak_pemilih = Voting::count();
 
-        foreach($kandidat as $key => $k) {
-            $jumlah = $k->id;
-            $no_urut = $k->no_urut;
-            $data = Voting::where('kandidat_id', $jumlah)->count();
+        // foreach($kandidat as $key => $k) {
+        //     $jumlah = $k->id;
+        //     $no_urut = $k->no_urut;
+        //     $data = Voting::where('kandidat_id', $jumlah)->count();
             
-            array_push($total_suara, $data);
+        //     array_push($total_suara, $data);
            
-        }
+        // }
         
         
         foreach($kandidat as $key => $kd) {

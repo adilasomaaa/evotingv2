@@ -17,6 +17,12 @@ class PemilihanController extends Controller
 
         return view('pemilihan.index',compact('title','data'));
     }
+    public function close()
+    {
+        $title =  'Pemilihan telah ditutup';
+        
+        return view('pemilihan.tutup',compact('title'));
+    }
 
     public function voting($id)
     {

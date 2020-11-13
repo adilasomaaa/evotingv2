@@ -39,7 +39,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-user-friends"></i>
               <p>
-                Manage Siswa
+                Manage Pemilih
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -48,13 +48,13 @@
               <li class="nav-item">
                 <a href="{{url('siswa')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Daftar Siswa</p>
+                  <p>Daftar Pemilih</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{url('siswa/add')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tambah Siswa</p>
+                  <p>Tambah Pemilih</p>
                 </a>
               </li>
             </ul>

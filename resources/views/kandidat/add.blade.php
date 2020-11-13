@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
-
+<?php 
+  $dt = \App\User::where('id', \Auth::user()->id)->first();
+?>
+ @if(\Auth::user()->id == 1)
 
     <div class="col-12">
 
@@ -53,7 +56,7 @@
         </div>
     </div>
 
-
+@endif
 @endsection
 
 @section('scripts')

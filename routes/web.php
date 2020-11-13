@@ -45,6 +45,7 @@ Route::group((['middleware' => 'auth']), function () {
     //Pemilihan
     Route::get('pemilihan','PemilihanController@index');
     Route::get('pemilihan/vote/{id}','PemilihanController@voting');
+    Route::get('tutup','PemilihanController@close');
 
     //Periode
     Route::get('periode','PeriodeController@index');

@@ -1,6 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
+<?php 
+  $dt = \App\User::where('id', \Auth::user()->id)->first();
+?>
+ @if(\Auth::user()->id == 1)
 <div class="row">
     <div class="col">
         <div class="small-box bg-success">
@@ -49,7 +53,7 @@
                    <b>Wakil</b> : {{$dt->calon_wakil}}
                 </td>
                 <td>
-                {!! json_encode($total_suara) !!}
+                {{$dt->voting->count()}}
                 </td>
             </tr>
             @endforeach
@@ -61,7 +65,7 @@
     <div id="container"></div>
     
 </figure>
-
+@endif
 @endsection
 
 @section('scripts')

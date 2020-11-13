@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Log in</title>
+  <title>Masuk</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -26,15 +26,26 @@
  
  <!-- Google Font -->
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<style type="text/css">
+.login-box, .register-box {
+    width: 500px;
+    margin: 7% auto;
+    padding: 15px;
+    box-shadow: 0 0 32px -4px rgba(0,0,0,.15);
+    border-radius: 10px;
+    background: #fff;
+}
+</style>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
+
+ <!-- /.login-logo -->
+ <div class="login-box-body">
  <div class="login-logo">
    <a href="../../index2.html"><b>ITGroup</b>SMKN1LIMBOTO</a>
  </div>
- <!-- /.login-logo -->
- <div class="login-box-body">
-   <p class="login-box-msg">Sign in to start your session</p>
+   <p class="login-box-msg">Masuk menggunakan akun yang disediakan</p>
  
    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
      {{ csrf_field() }}
@@ -74,7 +85,7 @@
  
    <!-- <a href="#">I forgot my password</a><br> -->
    <!-- <a href="register.html" class="text-center">Register a new membership</a> -->
- 
+  <p class="text-center">Belum mendapatkan akun?<a href="https://api.whatsapp.com/send?phone=6285311327490&text=Saya%20ingin%20bertanya%20mengenai%20pemilihan%20ketua%20osis."> Klik disini</a> </p>
  </div>
  <!-- /.login-box-body -->
 </div>
